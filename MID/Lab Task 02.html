@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            margin-top: 30px;
+            width: 100px;
+            height: auto;
+            align-items: center;
+        }
+
+        h1, h2, h3 {
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+
+        form {
+            display: inline-block;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: inline-block;
+            width: 180px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #34495e;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 500px;
+            padding: 7px;
+            margin-bottom: 10px;
+            border: 1px solid #bfc9d1;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        select {
+            width: 520px;
+        }
+        
+       
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 120px;
+            padding: 8px 0;
+            margin: 10px 8px 0 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #2980b9;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .terms {
+            font-size: 14px;
+            color: #7f8c8d;
+            width: 500px;
+            text-align: center;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #1c5d8c;
+            align-items: center;
+        }
+    </Style>
+    <img src="bankLogo.png" alt="">
+    <h1>Bank Management System</h1>
+    <h2>Your Trusted Financial Partner</h2>
+    <h3>Customer Registration Form</h3>
+    <form>
+        
+        <label for="name">FullName:</label>
+        <input type="text"><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date"><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio">
+        <label for="male">Male</label>
+        <input type="radio">
+        <label for="female">Female</label>
+        <input type="radio">
+        <label for="Others">Others</label><br><br>
+        <label for="maritalStatus">Marital Status:</label>
+        <select id="maritalStatus" name="maritalStatus">
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+        </select><br><br>
+        <label for="AccountType">Account Type:</label>
+        <select id="AccountType" name="AccountType">
+            <option value="savings">Savings</option>
+            <option value="current">Current</option>
+            <option value="fixed">Fixed Deposit</option>
+        </select><br><br>
+        <label for="initialDeposit">Initial Deposit Amount:</label>
+        <input type="number"><br><br>
+        <label for="MobileNumber">Mobile Number:</label>
+        <input type="tel"><br><br>
+        <label for="email">Email Address:</label>
+        <input type="email"><br><br>
+        <label for="address">Address:</label>
+        <textarea rows="4" cols="50"></textarea><br><br>
+        <label for="Occupation">Occupation:</label>
+        <input type="text"><br><br>
+        <label for="NID">National ID (NID):</label>
+        <input type="text"><br><br>
+        <label for="setPassword">Set Password:</label>
+        <input type="password"><br><br>
+        <label for="IDProof">Upload ID Proof:</label>
+        <input type="file"><br><br>
+        <input type="checkbox" required>
+        <label for="agree" class="terms">I agree to the terms and conditions</label><br><br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html
